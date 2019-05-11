@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/test3.css" />
+		<script src="js/echarts.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-top">
+				<div class="brand-logo">
+					<div class="brand-text">FREEBIE</div>
+				</div>
+				<div>
+					<hr class="divider" />
+				</div>
+				<div class="notification-box">
+					<div class="my-notifications">My Notifications</div>
+					<div class="circle">
+						<div class="notification-circle-text">2</div>
+					</div>
+				</div>
+				<div class="notification-invites-box">
+					<div class="invites">Invites</div>
+					<div class="circle">
+						<div class="notification-circle-text">2</div>
+					</div>
+				</div>
+				<div class="user-box">
+					<img class="user-icon" src="pic/account-pin-circle-line-bfbfbf.png">
+					<div class="user-name">user name</div>
+					<img class="arrow" src="pic/arrow%20down.png" />
+				</div>
+			</div>
+			<div class="proj-bar">
+				<div class="recent-proj-box">
+					<ul class="inline-list-ul">
+						<li><img class="icon" src="pic/copy.png"></li>
+						<li>Recent Project</li>
+						<li><img class="icon" src="pic/arrow-sort%20down-small.png"></li>
+					</ul>
+				</div>
+				<div class="new-proj-box">
+					<ul class="inline-list-ul">
+						<li><img class="icon" src="pic/new.png"></li>
+						<li>New Project</li>
+					</ul>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="get-start-button">
+					<img class="get-start-button-image" src="pic/cloud.png">
+					<div class="get-start-button-text">Let's get started</div>
+				</div>
+				<div class="general-menu" id="general">
+					<div class="general-text">GENERAL</div>
+					<a href="#1">
+						<div class="general-menu-normal">
+							<div class="pic-box">
+								<img class="general-menu-normal-icon" src="pic/dashboard.png">
+								<img class="pic-show" src="pic/dashboard1296db.png">
+							</div>
+							<div class="general-menu-normal-text">Dashboard/Projects</div>
+							<!-- <div class="general-menu-normal-tooltip">
+								<div class="general-menu-normal-tooltip-text">23</div>
+							</div> -->
+						</div>
+					</a>
+					<a href="#2">
+						<div class="general-menu-normal">
+							<div class="pic-box">
+								<img class="general-menu-normal-icon" src="pic/email.png">
+								<img class="pic-show" src="pic/email1296db.png">
+							</div>
+							<div class="general-menu-normal-text">Messaging</div>
+							<div class="general-menu-normal-tooltip">
+								<div class="general-menu-normal-tooltip-text">23</div>
+							</div>
+						</div>
+					</a>
+					<a href="#3">
+						<div class="general-menu-normal">
+							<div class="pic-box">
+								<img class="general-menu-normal-icon" src="pic/calendar.png">
+								<img class="pic-show" src="pic/calendar1296db.png">
+							</div>
+							<div class="general-menu-normal-text">Billing</div>
+							<!-- <div class="general-menu-normal-tooltip">
+								<div class="general-menu-normal-tooltip-text">23</div>
+							</div> -->
+						</div>
+					</a>
+				</div>
+				<div class="help-msg">
+					<div class="help-date-box">
+						<div class="help-date-text">24/7 Help</div>
+					</div>
+					<div class="call-box">
+						<img class="call-in" src="pic/Call-Recieved.png" />
+						<div class="call-us-any-time">call us any time </div>
+						<div class="tel">(111)123-456</div>
+					</div>
+					<div class="learning-center-box">
+						<img class="learning-center-icon" src="pic/building-line.png"/>
+						<div class="learning-center-text">Learning Center</div>
+					</div>
+					<div class="proj-manager-btn">
+						<ul class="inline-list-ul">
+							<li><img class="icon" src="pic/Email-white.png"></li>
+							<li>Project Manager</li>
+						</ul>
+					</div>
+				</div>
+				<div class="users-box">
+					<div class="users-title">USERS (4)</div><br />
+					<ul>
+						<li>
+							<img class="user-photo" src="pic/flower.png" />
+							<div class="user-nick-name">St. Zeara</div><br />
+							<img class="tie-profile" src="pic/up.png">
+							<div class="user-career">UI Developer</div>
+							<img class="user-status" src="pic/dot-circle-o.png"/>
+						</li>
+						<li>
+							<img class="user-photo" src="pic/flower.png" />
+							<div class="user-nick-name">St. Zeara</div><br />
+							<img class="tie-profile" src="pic/up.png">
+							<div class="user-career">UI Developer</div>
+							<img class="user-status" src="pic/dot-circle-o.png"/>
+						</li>
+						<li>
+							<img class="user-photo" src="pic/flower.png" />
+							<div class="user-nick-name">St. Zeara</div><br />
+							<img class="tie-profile" src="pic/up.png">
+							<div class="user-career">UI Developer</div>
+							<img class="user-status" src="pic/dot-circle-o.png"/>
+						</li>
+						<li>
+							<img class="user-photo" src="pic/flower.png" />
+							<div class="user-nick-name">St. Zeara</div><br />
+							<img class="tie-profile" src="pic/up.png">
+							<div class="user-career">UI Developer</div>
+							<img class="user-status" src="pic/dot-circle-o.png"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="revenues" id="curve-graph"></div>
+			<div class="transaction-charts-box">
+				<div class="transaction-charts-left"></div>
+				<div class="transaction-charts-right"></div>
+			</div>
+			<div class="chat-box" id="dialog">
+				<div class="chat-box-header">
+					<div class="chat-box-title">Qamar Loop</div>
+					<img src="pic/minimize.png" class="minimize-btn">
+					<img src="pic/close.png" class="close-btn" id="close-dialog">
+				</div>
+				<div class="chat-box-setting">
+					<img class="settings-alt" src="pic/setting.png" />
+				</div>
+			</div>
+		</div>
+		<script src="js/test3.js"></script>
+	</body>
+</html>
