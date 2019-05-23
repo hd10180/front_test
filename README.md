@@ -1,12 +1,12 @@
 # front_test
 front-end, ui, practise
-<h2>css踩坑日记</h2>
-<p>这种奇怪的连续选择器写法会使得后面的ul、li元素继承，使得后续的样式编写变得极其复杂
+<h2>css踩坑之一</h2>
+<p>这种选择器写法会使得后面的ul、li元素继承，使得后续的样式编写变得极其复杂
   （因为你无法预料到它继承了哪一级的父元素）
 </p>
 <p>尽可能不要这么写
   <code>
-    .nav-bar ul li{}
+    .nav-bar ul li ul li{}
   </code>
 </p>
 <p>
@@ -91,3 +91,4 @@ front-end, ui, practise
 }
 </code>
 </pre>
+<p>完整代码参见nav-bar.html和nav-bar.css</p>
