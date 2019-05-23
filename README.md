@@ -4,7 +4,7 @@ front-end, ui, practise
 <p>这种奇怪的连续选择器写法会使得后面的ul、li元素继承，使得后续的样式编写变得极其复杂
   （因为你无法预料到它继承了哪一级的父元素）
 </p>
-<p>因此尽可能不要这么写
+<p>尽可能不要这么写
   <code>
     .nav-bar ul li{}
   </code>
@@ -31,6 +31,8 @@ front-end, ui, practise
   padding: 0;
 }
 </code>
+</pre>
+<pre>
 <code>
 /*
 *二级列表
@@ -63,6 +65,8 @@ front-end, ui, practise
   flex-direction: column;*/
 }
 </code>
+</pre>
+<pre>
 <code>
 /*
 *三级列表
