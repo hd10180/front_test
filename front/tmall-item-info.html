@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/tmall-item-info.css">
+        <link rel="stylesheet" type="text/css" href="css/zyh-practice.css">
+        <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body class="body">
+        <div class="site-nav" >
+            <div class="sn-ctn">
+                <p>
+                    <span>喵，欢迎来到天猫</span>
+                    <a href="#">请登录</a>
+                    <a href="#">免费注册</a>
+                </p>
+                <ul class="sn-quick-menu">
+                    <li><a href="#">我的淘宝<b></b></a>
+                        <ul>
+                            <li><a href="#">已买到的宝贝</a></li>
+                            <li><a href="#">已卖出的宝贝</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="#">收藏夹<b></b></a>
+                        <ul>
+                            <li><a href="#">收藏的宝贝</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">手机版</a></li>
+                    <li><a href="#">淘宝网</a></li>
+                    <li><a href="#">商家支持<b></b></a>
+                        <div class="seller-support">
+                            <ul>
+                                <li>
+                                    <h4>商家:</h4>
+                                    <a href="#">商家中心</a>
+                                    <a href="#">天猫规则</a>
+                                    <a href="#">商家入驻</a>
+                                    <a href="#">运营服务</a>
+                                    <a href="#">商家品控</a>
+                                    <a href="#">商家工具</a>
+                                    <a href="#">天猫智库</a>
+                                    <a href="#">喵言喵语</a>
+                                </li>
+                                <li>
+                                    <h4>帮助</h4>
+                                    <a href="#">帮助中心</a>
+                                    <a href="#">问商友</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>网站导航<b></b>
+                        <div class="site-nav-ctn">
+                            <div class="site-hot">
+                                <h2>热点推荐 Hot</h2>
+                                <ul>
+                                    <li><a href="#">天猫超市</a></li>
+                                    <li><a href="#">喵鲜生</a></li>
+                                    <li><a href="#">科技新品</a></li>
+                                    <li><a href="#">女装新品</a></li>
+                                    <li><a href="#">酷玩街</a></li>
+                                    <li><a href="#">内衣新品</a></li>
+                                    <li><a href="#">试美妆</a></li>
+                                    <li><a href="#">运动新品</a></li>
+                                    <li><a href="#">时尚先生</a></li>
+                                    <li><a href="#">精明妈咪</a></li>
+                                    <li><a href="#">吃乐会</a></li>
+                                    <li><a href="#">企业采购</a></li>
+                                    <li><a href="#">会员积分</a></li>
+                                    <li><a href="#">天猫国际</a></li>
+                                    <li><a href="#">品质频道</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-market">
+                                <h2>行业市场 Market</h2>
+                                <ul>
+                                    <li><a href="#">美妆</a></li>
+                                    <li><a href="#">电器</a></li>
+                                    <li><a href="#">女装</a></li>
+                                    <li><a href="#">男装</a></li>
+                                    <li><a href="#">女鞋</a></li>
+                                    <li><a href="#">男鞋</a></li>
+                                    <li><a href="#">内衣</a></li>
+                                    <li><a href="#">箱包</a></li>
+                                    <li><a href="#">运动</a></li>
+                                    <li><a href="#">母婴</a></li>
+                                    <li><a href="#">家装</a></li>
+                                    <li><a href="#">医药</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-help">
+                                <h2>服务指南 Help</h2>
+                                <ul>
+                                    <li><a href="#">帮助中心</a></li>
+                                    <li><a href="#">品质保证</a></li>
+                                    <li><a href="#">特色服务</a></li>
+                                    <li><a href="#">7天退换货</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-mall-desc">
+            <div class="mall-category-logo-ctn">
+                <img class="category-logo" src="//img.alicdn.com/tps/i1/TB1nEsdLXXXXXcYXFXXNyvXJXXX-83-32.png">
+            </div>
+            <div class="shop-info-ctn">
+                <div class="shop-desc-ctn">
+                    <div class="shop-desc">
+                        <strong><a href="#">SHISEIDO资生堂官方旗舰店</a></strong>
+                        <div>
+                            <span class="brand-sell"><span>品牌直销</span></span>
+                            <span class="ali-ww">
+                                <img class="ali-ww" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABuElEQVRYhe1Xy3HCUAykBMkVpAR3EDqADkIHcQfQgTkg+Rg6gA6gAzhrPWM6MB2QA9iY+Bn8C0xmohkd/Xa1Wuk9Dwb/8SBIEbBiRRGGryEQJsSKo6c4sWLzEiKe2tJTnPIU+6IFRs8jIJjdECgkKzZehCkp3n+NACu2VQRuyAhSVqxI44/ewEvy10wWpF6EKYUJPR38tkWWkMbjRsAUJsRiu67gxSSxSW0CrLbvE7wRCU/ieZ+grDiSxuOsnSTmV0sfYdgcxJYUYVipmsTzXFnBgcV21dILDo1lvbi8uDGrZM/UdarQpnoWHB6172LmkMQ+z604q1bufdt5zzbhAqMrgNuAWZGs2Jbl7+h8EpuQmH/P/TkBQepQoAO4Iqg6pwhWvFN6I1CU846PQhLzWZC6vHNuQYsJyCrMJqGujyo8UO/Gcx9oCSs2tb8p7IY8SBF08UFDwzr2QJjQM8BZbV8Cv7q033vAWf29N+X5Gm5nxnrp2IAlEmK+a6d3l97h/GeRYMG68dOMouSty2heqj4Wt2SrILFJUyKsOHqCWacHqYOIT4qABeufhFhtz4qtJ5i97Bfuz8Y3ItRkbAduBjcAAAAASUVORK5CYII=">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-index-ctn">
+                    <div class="index-ctn">
+                        <div class="index-item">
+                            <div class="index-title">描述</div>
+                            <div class="index-index">4.9&#8673;</div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-title">服务</div>
+                            <div class="index-index">4.9&#8673;</div>
+                        </div>
+                        <div class="index-item">
+                            <div class="index-title">物流</div>
+                            <div class="index-index">4.9&#8673;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mall-search-ctn">
+                <div class="tmall-default-search-ctn">
+                    <input type="text" placeholder="搜索 天猫 商品/品牌/店铺">
+                    <button class="search-btn">搜天猫</button>
+                </div>
+                <button class="search-present-btn">搜本店</button>
+            </div>
+        </div>
+        <div class="shop-banner-ctn">
+            <div class="shop-ad-ctn">
+                <a href="#">
+                    <img src="https://gdp.alicdn.com/imgextra/i3/2224996251/O1CN01RrEd5P1w30KyltRui_!!2224996251.gif">
+                </a>
+            </div>
+            <div class="shop-nav-ctn">
+                <div class="shop-all-ctn">
+                    <a href="#"><span>本店所有商品</span></a>
+                    <ul class="drop-down-menu">
+                       <li>
+                           <a href="#">所有宝贝</a>
+                           <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                       </li>
+                        <li>
+                            <a href="#">畅销爆款</a>
+                            <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                            <a href="#">护肤系列</a>
+                            <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">彩妆系列</a>
+                            <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">护肤品类</a>
+                            <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">彩妆品类</a>
+                            <ul class="sec-ul">
+                               <li><a href="#">彩妆</a></li>
+                               <li><a href="#">护肤</a></li>
+                               <li><a href="#">指南</a></li>
+                               <li><a href="#">畅销</a></li>
+                               <li><a href="#">推荐</a></li>
+                           </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul>
+                    <a href="#"><li><span>首页</span></li></a>
+                    <a href="#"><li><span>所有产品</span></li></a>
+                    <a href="#"><li><span>畅销榜单</span></li></a>
+                    <a href="#"><li><span>新傲娇精华</span></li></a>
+                    <a href="#"><li><span>美白气垫</span></li></a>
+                    <a href="#"><li><span>彩妆</span></li></a>
+                    <a href="#"><li><span>会员中心</span></li></a>
+                    <a href="#"><li><span>品牌故事</span></li></a>
+
+                </ul>
+            </div>
+        </div>
+        {#    商品价格图片title信息#}
+        <div class="item-detail-ctn">
+            <div class="item-detail-left-ctn">
+                <div class="item-detail-main-ctn">
+                    <div class="item-title-ctn">
+                        <h1>【618预售】资生堂红腰子精华傲娇新红妍精华露30ml*2 维稳修护</h1>
+                        <p>维稳修护 细腻弹润 </p>
+                    </div>
+                    <div class="item-activity-ctn"></div>
+                    <div class="item-price-ctn">
+                        <div>
+                            <span class="price-title">价格</span>
+                            <span class="item-price">￥1180.00</span>
+                        </div>
+                        <div class="activity-price">
+                            <span class="price-title">促销价</span>
+                            <span class="item-price">￥999</span>
+                        </div>
+                    </div>
+                    <div class="item-area-cost-ctn">
+                        <div class="cost-title">
+                            <span>运费</span>
+                        </div>
+                        <div class="area-content-item">
+                            <span id="localAddr">上海</span>
+                            至
+                        </div>
+                        <div class="area-content-item">
+                            <span id="defaultAddr">
+                                广州 南沙区
+                            </span>
+                        </div>
+                        <div class="area-content-item"><span>快递：</span></div>
+                        <div class="area-content-item"><span id="areaCost">0.00</span></div>
+                    </div>
+                    <ul class="item-little-comments-ctn">
+                        <li>累计评价<span class="comments-count">21839</span></li>
+                        <li>送天猫积分<span class="get-tmall-integration">590</span></li>
+                    </ul>
+                    <div class="item-buy-activity-ctn">
+                        <div class="item-account-ctn">
+                            <div class="account-title">
+                                <span>数量</span>
+                            </div>
+                            <div class="account-input-box">
+                                <input type="text" name="account" id="account" class="account-input">
+                                <div class="add-acount">
+                                    <img class="a-d-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuElEQVRYhe2TQRGDMBREkYCESqkEnGChEnBQHOBgtw5AAg6Kg/byD5Ah8Bt+YDrzdya3zb6XQ4rC4/F4EkPyQfItpz4b3pL8BOd5JfwciR14XgklPI9EDA5gADBkldiCkyxJltkk9uCznq2EvKzTwM0lBN7/AldKcOvuYbhSoo9uWMAPSQB4WcCVEgzLt0ixTYErJZa7AKYQngpeEVl8ZwDTWqkCMEqpsYLP9huBjyTv1vsej+d/8wVaUXZv5S4f3wAAAABJRU5ErkJggg==">
+                                </div>
+                                <div class="dec-acount">
+                                    <img class="a-d-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuklEQVRYhe2UwQ2DMAxFGSGjMEI2IZu0G5QN6AbdwH8EVmEDerEqKyWFNDbi4C/9k3/03ild5/F4rhIACcANQDRkRGYM+WEEsIo+DOA5Y5THdaOTIvy5xfgMiGixkijBiWiRo1QQaJIowbkpH6tKVMG1Jf6Ca0k0wVslVOAHJWYAQWwDgJcavEaCO6vDKyTs4EKi//FZfZW3UQVeK8GbXhV+VMIUvidxCrwkcSpcSAQAd27Yf+HxeC6aN+HDvDYq2qUsAAAAAElFTkSuQmCC">
+                                </div>
+                            </div>
+                            <div class="account-unit">
+                                <span>件</span>
+                            </div>
+                        </div>
+                        <div class="i-want-it-ctn">
+                            <a href="#" class="i-want-it-btn">立即购买</a>
+                        </div>
+                    </div>
+                    <div class="item-ensure-ctn">
+                        <div class="item-ensure-title">
+                            <span>服务承诺</span>
+                        </div>
+                        <div class="item-ensure-content">
+                            <div class="item-ensure-content-item">
+                                <span>过敏包退</span>
+                            </div>
+                            <div class="item-ensure-content-item">
+                                <span>正品保证</span>
+                            </div>
+                            <div class="item-ensure-content-item">
+                                <span>极速退款</span>
+                            </div>
+                            <div class="item-ensure-content-item">
+                                <span>货到付款</span>
+                            </div>
+                            <div class="item-ensure-content-item">
+                                <span>七天无理由退货</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-tmall-tip">
+                        检测到您当前处于非安全网络环境，部分商品信息可能不准确，请在交易支付页面再次确认商品价格信息。
+                    </div>
+                </div>
+                <div class="item-image-desc-ctn">
+                    <div class="item-pic-box">
+                        <img id="display-box" src="https://img.alicdn.com/imgextra/i2/2224996251/O1CN01BIM8dp1w30LDce4hI_!!0-item_pic.jpg_430x430q90.jpg">
+                        <span id="zoom-span" class="zoom-span"></span>
+                        <span class="shade" id="shade"></span>
+                    </div>
+                    <div class="item-pic-zoom-box" id="zoom-box">
+                        <img id="zoom-img" src="https://img.alicdn.com/imgextra/i4/2224996251/O1CN01ZfS1FZ1w30LACjG2E_!!0-item_pic.jpg" alt="">
+                    </div>
+                    <div class="item-pic-bar" id="item-pic-bar-list">
+                        <div class="pic-item">
+                            <img src="https://img.alicdn.com/imgextra/i4/2224996251/O1CN01NWmv061w30Kz7xrf5_!!0-item_pic.jpg_60x60q90.jpg">
+                        </div>
+                        <div class="pic-item">
+                            <img src="https://img.alicdn.com/imgextra/i3/2224996251/O1CN01su2SvY1w30LAaVntM_!!2224996251.jpg_60x60q90.jpg">
+                        </div>
+                        <div class="pic-item">
+                            <img src="https://img.alicdn.com/imgextra/i2/2224996251/O1CN017CAGhH1w30JCiw9eA_!!0-item_pic.jpg_60x60q90.jpg">
+                        </div>
+                        <div class="pic-item">
+                            <img src="https://img.alicdn.com/imgextra/i3/2224996251/O1CN01WHJdLJ1w30JVksQ6J_!!2224996251.jpg_60x60q90.jpg">
+                        </div>
+                        <div class="pic-item">
+                            <img src="https://img.alicdn.com/imgextra/i1/2224996251/O1CN01xn3mhd1w30LD4kNfK_!!2224996251.jpg_60x60q90.jpg">
+                        </div>
+                    </div>
+                    <div class="item-operation">
+                        <a href="#">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABPUlEQVRYhe2W0Y2DMAyGO0JGyAiM0BEYgQ2uGxwjdAQ2CBP4uw2uG8AGdAPuAUeKaIEI4eOlliwhBfF/CfbvXC6fMAigAALQaQag+C/xEhgXsrQWd8CwAjAAzhKgWhGPWVkC1BkAtSXA/RQA/fchQ3wE/NHiZVp4IvJcEb8fKfxu13WEEpE+geqB216RFwPRak93/Vh4z+06cj3Wbta/X4BnCruiymylUUR+LArKZwg/d/3PTIBbxu5rE3EFON3Jcrw8WAK4DSOJ+YvVfGcykSWIJnkesJps2g2NiDzUxZq4Y+A6AwwszHgmIzp+/uuH2wSiA67J+tzIOixuQ2/a9nujk2oLiEJnwVbhxvQWEI68y8iIlYsqyDk3ogQgx8hMT2DVyHTNmwEoxJqRVabiCYQHWhHpFaYl8YlPpPEHw/eG1IE/UisAAAAASUVORK5CYII=" alt="">
+                            <span>分享</span>
+                        </a>
+                        <a href="#">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABE0lEQVRYhe2W0Q2CMBRFHYERGIENdAQ3kBHcQEZwBEZwgnvYQDfQDXQD/LAmhJRa2lJ/eMn7o5wT2vvKZrPWWhEl6QZc/wIHaqA3vc8uIKkbCJAVDlQD+LfLnAKtReCcC15Y4D3wBIocAs2EQA/UqWGFpK2kLXAATsDdIXA3z5wG68q50IsDENu/0yLptZSApIfPF6iWkJD0ACrfbSjNmE0FvzE3IXwOYBcDDoaPRGxDx7fbYPBIwpX9qb4kgRuBY4BAutFMwGyQ1CUTCI1lEjj2q9e3/XL/Q8C6/yZeO2DniOsxhUA7Ar+w3HpAbdmq+INoRuj3hQ2OocLnX6EZyHbRAiYBLTOuVaA0a9LNgrXWWqrec9aqhOSE9d8AAAAASUVORK5CYII=" alt="">
+                            <span>收藏商品</span>
+                        </a>
+                        <a href="#"><span>（159229人气）</span></a>
+                        <a href="#"><span>举报</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-detail-right-ad-ctn">
+                <div class="top-title-box">
+                    <div class="line"></div>
+                    <div class="top-title">看了又看</div>
+                </div>
+                <ul class="scroll-ad-box">
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01uLUxBZ1w30KMgB9v9_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01d7Miqa1w30LCzeNRE_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01cAxdAj1w30LBLjTFA_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01lsdGru1w30LAAwt4C_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01cHcvoi1w30LDcxtlQ_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN013nUx361w30LATPBQw_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01yus8qP1w30LCHxACI_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01MOqb8x1w30LDcvHXS_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                    <li class="scroll-ad-item">
+                        <img src="https://img-tmdetail.alicdn.com/bao/uploaded///img.alicdn.com/bao/uploaded/O1CN01IYKvwR1w30LDew0zh_!!0-item_pic.jpg_160x160q90.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="ad-control-ctn">
+                    <div class="ad-control-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuElEQVRYhe2TQRGDMBREkYCESqkEnGChEnBQHOBgtw5AAg6Kg/byD5Ah8Bt+YDrzdya3zb6XQ4rC4/F4EkPyQfItpz4b3pL8BOd5JfwciR14XgklPI9EDA5gADBkldiCkyxJltkk9uCznq2EvKzTwM0lBN7/AldKcOvuYbhSoo9uWMAPSQB4WcCVEgzLt0ixTYErJZa7AKYQngpeEVl8ZwDTWqkCMEqpsYLP9huBjyTv1vsej+d/8wVaUXZv5S4f3wAAAABJRU5ErkJggg==" alt="">
+                    </div>
+                    <div class="ad-control-item">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAuklEQVRYhe2UwQ2DMAxFGSGjMEI2IZu0G5QN6AbdwH8EVmEDerEqKyWFNDbi4C/9k3/03ild5/F4rhIACcANQDRkRGYM+WEEsIo+DOA5Y5THdaOTIvy5xfgMiGixkijBiWiRo1QQaJIowbkpH6tKVMG1Jf6Ca0k0wVslVOAHJWYAQWwDgJcavEaCO6vDKyTs4EKi//FZfZW3UQVeK8GbXhV+VMIUvidxCrwkcSpcSAQAd27Yf+HxeC6aN+HDvDYq2qUsAAAAAElFTkSuQmCC" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+{#        商品、店铺详情#}
+        <div class="item-and-shop-desc-ctn">
+            <div class="a-left-ctn">
+                <div class="shop-info">
+                    <div class="shop-title">
+                        <span>
+                            <a>shiseido资生堂官方旗舰店</a>
+                        </span>
+                        <a href="#">
+                            <img class="contact-ali-ww" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABuElEQVRYhe1Xy3HCUAykBMkVpAR3EDqADkIHcQfQgTkg+Rg6gA6gAzhrPWM6MB2QA9iY+Bn8C0xmohkd/Xa1Wuk9Dwb/8SBIEbBiRRGGryEQJsSKo6c4sWLzEiKe2tJTnPIU+6IFRs8jIJjdECgkKzZehCkp3n+NACu2VQRuyAhSVqxI44/ewEvy10wWpF6EKYUJPR38tkWWkMbjRsAUJsRiu67gxSSxSW0CrLbvE7wRCU/ieZ+grDiSxuOsnSTmV0sfYdgcxJYUYVipmsTzXFnBgcV21dILDo1lvbi8uDGrZM/UdarQpnoWHB6172LmkMQ+z604q1bufdt5zzbhAqMrgNuAWZGs2Jbl7+h8EpuQmH/P/TkBQepQoAO4Iqg6pwhWvFN6I1CU846PQhLzWZC6vHNuQYsJyCrMJqGujyo8UO/Gcx9oCSs2tb8p7IY8SBF08UFDwzr2QJjQM8BZbV8Cv7q033vAWf29N+X5Gm5nxnrp2IAlEmK+a6d3l97h/GeRYMG68dOMouSty2heqj4Wt2SrILFJUyKsOHqCWacHqYOIT4qABeufhFhtz4qtJ5i97Bfuz8Y3ItRkbAduBjcAAAAASUVORK5CYII=" alt="">
+                        </a>
+                     </div>
+                    <div class="shop-desc-in-tmall">
+                        <span>5</span>
+                        <span>天猫5年店</span>
+                    </div>
+                    <div class="index-ctn-a">
+                        <div class="index-item-a">
+                            <div class="index-title-a">描述</div>
+                            <div class="index-index-a">4.9&#8673;</div>
+                        </div>
+                        <div class="index-item-a">
+                            <div class="index-title-a">服务</div>
+                            <div class="index-index-a">4.9&#8673;</div>
+                        </div>
+                        <div class="index-item-a">
+                            <div class="index-title-a">物流</div>
+                            <div class="index-index-a">4.9&#8673;</div>
+                        </div>
+                    </div>
+                    <div class="goto-shop-btn-ctn">
+                        <div class="goto-shop-btn">
+                            <a href="#">进店逛逛</a>
+                        </div>
+                        <div class="like-this-shop-btn">
+                            <a href="#">收藏店铺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-box">
+                    <img src="https://gdp.alicdn.com/imgextra/i1/2224996251/TB2KbujdljTBKNjSZFuXXb0HFXa-2224996251.jpg" alt="">
+                    <img src="https://gdp.alicdn.com/imgextra/i2/2224996251/O1CN011w30GD9jbQLwFqc_!!2224996251.jpg" alt="">
+                    <img src="https://gdp.alicdn.com/imgextra/i2/2224996251/TB2Rmt1lFuWBuNjSspnXXX1NVXa-2224996251.jpg" alt="">
+                    
+                </div>
+            </div>
+
+            <div class="a-right-ctn">
+                <div class="top-choices-ctn">
+                    <ul>
+                        <li class="get-item-detail selected-get-item-some" id="c-item-desc-btn">
+                            <a >商品详情</a>
+                        </li>
+                        <li class="get-item-comments" id="c-item-comments-btn">
+                            <a >累计评价<span>19275</span></a>
+                        </li>
+                        <div class="clear-fix"></div>
+                    </ul>
+                </div>
+                <div class="item-desc-ctn" id="s-item-desc-box">
+                    <div class="item-desc-box">
+                        <div class="product-brand">
+                            品牌名称：<b>Shiseido/资生堂</b>
+                        </div><br>
+                        <p>产品参数：</p>
+                        <ul class="product-para-box">
+                            <li>品牌: Shiseido/资生堂</li>
+                            <li>资生堂单品: UTM套装1</li>
+                            <li>产地: 日本</li>
+                            <li>功效: 补水 保湿 滋润 其他/other</li>
+                            <li>规格类型: 正常规格</li>
+                            <li>是否为特殊用途化妆品: 否</li>
+                            <li>限期使用日期范围: 2021-05-01至2021-05-</li>
+                            <div class="clear-fix"></div>
+                        </ul>
+                    </div>
+                    <div class="consumption-tips">
+                         <b>消费提醒：</b> 国家药监局提示您：请正确认识化妆品功效，化妆品不能替代药品，不能治疗皮肤病等疾病。
+                    </div>
+                    <div class="item-description-info-box">
+                        <img src="https://gdp.alicdn.com/imgextra/i1/2224996251/O1CN01x2JE511w30L55d7xv_!!2224996251.jpg" alt="">
+                        <img src="https://img.alicdn.com/imgextra/i4/2224996251/O1CN0126g22k1w30L4Xkkva_!!2224996251.jpg" alt="">
+                        <img src="https://img.alicdn.com/imgextra/i2/2224996251/TB2OpVTsBjTBKNjSZFuXXb0HFXa_!!2224996251.jpg" alt="">
+                        <img src="https://gdp.alicdn.com/imgextra/i1/2224996251/O1CN01yjh0ns1w30L1HRjiE_!!2224996251.jpg" alt="">
+                        <img src="https://img.alicdn.com/tfs/TB1.CUdsY9YBuNjy0FgXXcxcXXa-1572-394.png" alt="">
+                    </div>
+                </div>
+                <div class="item-desc-ctn" id="s-item-comments-box">
+                    <div class="item-comments-ctn">
+                       <div class="item-comments-table-box">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+    {#                                        买家评论内我那个容器#}
+                                            <div class="buyer-comments-info-ctn">
+                                                <div class="buyer-comments-and-images-ctn">
+    {#                                            买家文字评论#} 
+                                                    <div class="buyer-comments">
+                                                        这是我的最爱！ 个人情况：油皮痘痘闭口肌 整体描述：用起来很清爽一点也不油腻！收缩毛孔细腻皮肤还可以。味道包装都喜欢。一直会回购的精华。除了贵没毛病！希望店家多做活动，多多优惠多送小样，
+                                                    </div>
+    {#                                            买家晒图#}
+                                                    <div class="buyer-comments-images-ctn">
+                                                        <img src="https://img.alicdn.com/bao/uploaded/i2/O1CN01fN7sSX24ubc2NBsGM_!!0-rate.jpg_400x400.jpg" alt="">
+                                                        <img src="https://img.alicdn.com/bao/uploaded/i4/O1CN01d8yDM11MCKEC5T29i_!!0-rate.jpg_400x400.jpg" alt="">
+                                                    </div>
+                                                    <img class="maximize-img-box" src="https://img.alicdn.com/bao/uploaded/i2/O1CN01fN7sSX24ubc2NBsGM_!!0-rate.jpg_400x400.jpg" alt="">
+                                                </div>
+                                            </div>
+    {#                                        评论时间#}
+                                            <div class="buyer-comments-time">
+                                                05.14
+                                            </div>
+    {#                                        卖家回复#}
+                                            <div class="seller-comments-info-ctn">
+                                                解释：亲爱的，非常感谢您对Shiseido资生堂的支持。店铺不定期会推出活动，您可以收藏店铺关注了解活动详情，尊享更多惊喜礼遇。若赠品小样使用不错的话，可以购入正装进行更好的肌肤护理哦。我们一直致力于为您提供优质的产品、贴心的服务。再次感谢您对资生堂的支持，竭诚期待您再次光临！青春美丽计划从护肤开始，资生堂带您一起享受智慧美丽生活~【Shiseido资生堂官方旗舰店】
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="buyer-nick-name-box">
+                                                林
+                                                <span>***</span>
+                                                新
+                                                <span>（匿名）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+    {#                                        买家评论内我那个容器#}
+                                            <div class="buyer-comments-info-ctn">
+                                                <div class="buyer-comments-and-images-ctn">
+    {#                                            买家文字评论#}
+                                                    <div class="buyer-comments">
+                                                        这是我的最爱！ 个人情况：油皮痘痘闭口肌 整体描述：用起来很清爽一点也不油腻！收缩毛孔细腻皮肤还可以。味道包装都喜欢。一直会回购的精华。除了贵没毛病！希望店家多做活动，多多优惠多送小样，
+                                                    </div>
+    {#                                            买家晒图#}
+                                                    <div class="buyer-comments-images-ctn">
+                                                        <img src="https://img.alicdn.com/bao/uploaded/i2/O1CN01fN7sSX24ubc2NBsGM_!!0-rate.jpg_400x400.jpg" alt="">
+                                                        <img src="https://img.alicdn.com/bao/uploaded/i4/O1CN01d8yDM11MCKEC5T29i_!!0-rate.jpg_400x400.jpg" alt="">
+                                                    </div>
+                                                    <img class="maximize-img-box" src="https://img.alicdn.com/bao/uploaded/i2/O1CN01fN7sSX24ubc2NBsGM_!!0-rate.jpg_400x400.jpg" alt="">
+                                                </div>
+                                            </div>
+    {#                                        评论时间#}
+                                            <div class="buyer-comments-time">
+                                                05.14
+                                            </div>
+    {#                                        卖家回复#}
+                                            <div class="seller-comments-info-ctn">
+                                                解释：亲爱的，非常感谢您对Shiseido资生堂的支持。店铺不定期会推出活动，您可以收藏店铺关注了解活动详情，尊享更多惊喜礼遇。若赠品小样使用不错的话，可以购入正装进行更好的肌肤护理哦。我们一直致力于为您提供优质的产品、贴心的服务。再次感谢您对资生堂的支持，竭诚期待您再次光临！青春美丽计划从护肤开始，资生堂带您一起享受智慧美丽生活~【Shiseido资生堂官方旗舰店】
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="buyer-nick-name-box">
+                                                林
+                                                <span>***</span>
+                                                新
+                                                <span>（匿名）</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+        <footer>
+        {#    天猫保障，承诺等#}
+            <div class="tmall-ensure-ctn">
+                <div class="ensure-item">
+                    <a href="#"><img src="https://iph.href.lu/279x100" class="ensure-item"></a>
+                </div>
+                <div class="ensure-item">
+                    <a href="#"><img src="https://iph.href.lu/279x100" class="ensure-item"></a>
+                </div>
+                <div class="ensure-item">
+                    <a href="#"><img src="https://iph.href.lu/279x100" class="ensure-item"></a>
+                </div>
+                <div class="ensure-item">
+                    <a href="#"><img src="https://iph.href.lu/279x100" class="ensure-item"></a>
+                </div>
+            </div>
+        {#    天猫描述，购物指南，等#}
+            <div class="tmall-desc-ctn">
+                <div class="tmall-desc-item">
+                    <div class="item-title">
+                        <span>购物指南</span>
+                    </div>
+                    <div>
+                        <a href="#">免费注册</a>
+                        <a href="#">开通支付宝</a>
+                        <a href="#">支付宝充值</a>
+                    </div>
+                </div>
+                <div class="tmall-desc-item">
+                    <div class="item-title">
+                        <span>天猫保障</span>
+                    </div>
+                    <div>
+                        <a href="#">发票保障</a>
+                        <a href="#">售后规则</a>
+                        <a href="#">缺货赔付</a>
+                    </div>
+                </div>
+                <div class="tmall-desc-item">
+                    <div class="item-title">
+                        <span>支付方式</span>
+                    </div>
+                    <div>
+                        <a href="#">快捷支付</a>
+                        <a href="#">信用卡</a>
+                        <a href="#">余额宝</a>
+                        <a href="#">蚂蚁花呗</a>
+                        <a href="#">货到付款</a>
+                    </div>
+                </div>
+                <div class="tmall-desc-item">
+                    <div class="item-title">
+                        <span>商家服务</span>
+                    </div>
+                    <div>
+                        <a href="#">天猫规则</a>
+                        <a href="#">商家入驻</a>
+                        <a href="#">商家中心</a>
+                        <a href="#">天猫智库</a>
+                        <a href="#">物流服务</a>
+                        <a href="#">喵言喵语</a>
+                        <a href="#">运营服务</a>
+                    </div>
+                </div>
+                <div class="tmall-desc-item">
+                    <div class="item-title">
+                        <span>手机天猫</span>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://img.alicdn.com/tfscom/TB14MWoNhjaK1RjSZFAwu2dLFXa.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {#    天猫底部信息，版权信息等#}
+            <div class="tmall-copyright-ctn">
+                <p class="footer-tmall-info">
+                    <a href="#">关于天猫</a>
+                    <a href="#">帮助中心</a>
+                    <a href="#">开放平台</a>
+                    <a href="#">诚聘英才</a>
+                    <a href="#">联系我们</a>
+                    <a href="#">网站合作</a>
+                    <a href="#">法律声明</a>
+                    <a href="#">隐私权政策</a>
+                    <a href="#">知识产权</a>
+                    <a href="#">廉政举报</a>
+                    <a href="#">规则意见征集</a>
+                </p>
+                <p class="footer-tmall-info" >
+                    <a href="#">阿里巴巴集团</a>|
+                    <a href="#">淘宝网</a>|
+                    <a href="#">天猫</a>|
+                    <a href="#">聚划算</a>|
+                    <a href="#">全球速卖通</a>|
+                    <a href="#">阿里巴巴国际交易市场</a>|
+                    <a href="#">1688</a>|
+                    <a href="#">阿里妈妈</a>|
+                    <a href="#">飞猪</a>|
+                    <a href="#">阿里云计算</a>|
+                    <a href="#">AliOS</a>|
+                    <a href="#">阿里通信</a>|
+                    <a href="#">万网</a>|
+                    <a href="#">高德</a>|
+                    <a href="#">UC</a>|
+                    <a href="#">友盟</a>|
+                    <a href="#">虾米</a>|
+                    <a href="#">钉钉</a>|
+                    <a href="#">支付宝</a>|
+                </p>
+                <div class="tmall-copyright-info-ctn">
+                    增值电信业务经营许可证： <a href="#">浙B2-20110446</a>
+                    <span>市场名称登记证：工商网市字3301004119号</span>
+                    <span>出版物网络交易平台服务经营备案证： 新出发浙备字第001号</span><br>
+                    <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                    互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a>
+                    <a href="#"><img src="https://img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png">浙公网安备 33010002000120号</a><br>
+                    <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                    <span>互联网药品交易服务资格证书：国A20150001</span><br>
+                    <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+                    <a href="#">12318举报</a><br>
+                    <span style="color:#686868;">© 2003-2019 TMALL.COM 版权所有</span><br>
+                    <a href="#" style="margin: 10px 10px auto 0"><img src="https://img.alicdn.com/tps/i4/TB1j5gtHXXXXXXjaXXXydRxIFXX-73-30.jpg"></a>
+                    <a href="#" style="margin: 10px 10px auto 0"><img src="https://img.alicdn.com/tps/i1/TB13mgzHXXXXXbjXVXXzby4IVXX-80-30.jpg"></a>
+                </div>
+            </div>
+        </footer>
+        <div class="right-main-bar-ctn">
+            <div class="main-bar-ctn">
+                <div class="usr-rights"><div class="arrow_box">会员权益</div></div>
+                <div class="shopping-cart"><span>购物车</span></div>
+                <div class="my-assets"><div class="arrow_box">我的资产</div></div>
+                <div class="my-collections"><div class="arrow_box">我的收藏</div></div>
+                <div class="my-histories"><div class="arrow_box">浏览历史</div></div>
+            </div>
+        </div>
+    <script src="js/tmall-item-info.js"></script>
+    </body>
+</html>     
